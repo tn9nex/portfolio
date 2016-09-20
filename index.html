@@ -25,7 +25,7 @@
                </div>
                <div class="collapse navbar-collapse" id="header-collapse">
                   <ul class="nav navbar-nav navbar-right">
-                     <li class="active" id="nav-home"><a href="#">HOME</a></li>
+                     <li><a href="#" id="nav-home">HOME</a></li>
                      <li><a href="#" id="nav-about">ABOUT</a></li>
                      <li><a href="#" id="nav-portfolio">PORTFOLIO</a></li>
                      <li><a href="#" id="nav-contact">CONTACT</a></li>
@@ -34,6 +34,7 @@
             </div>
          </nav>
       </header>
+
       <section id="heading">
          <div class="container">
             <div class="col-sm-8">
@@ -45,16 +46,18 @@
             <div class="col-sm-4"></div>
          </div>
       </section>
+
       <section id="about" class="center">
          <div class="container">
             <div class="about-container">
-               <h3><span class="red-heading">Looking for a web developing guru<br>who eats sleeps and breaths HTML? Look no further...</span></h3>
-               <h2>My name is Anthony Sanchez...</h2>
-               <p>...And I am a full-time Front End Developer at <span class="purple-text"><a href="http://www.funimation.com">FUNimation</a></span>. I am extremely passionate about development, and I enjoy taking on projects of all types and styles. In my eyes, a new project is like a new puzzle.</p>
+               <h3><span class="red-heading">Hello There!</nobr></span></h3>
+               <h2>My name is Anthony Sanchez</h2>
+               <p>I am a full-time Front End Developer at <span class="purple-text"><a href="http://www.funimation.com">FUNimation</a></span>. I believe in producing high quality work that fuels the engagement between brands and their audience. I am extremely passionate about development, and would love to apply my knowledge and experience to your next project!</p>
                <button id="explore">MY WORK</button>
             </div>
          </div>
       </section>
+
       <section id="portfolio">
          <div class="container">
             <div id="gallery-bar-container">
@@ -65,15 +68,16 @@
                   <div class="about-gallery-content-wrapper">
                      <div class="about-gallery-item active" data-title="site 1">
                         <div class="about-gallery-item-content">
-                           <div class="col-sm-4">
-                              <div class="portfolio-logo">
+                           <div class="col-sm-4 logo-explanation">
+                              <div class="portfolio-logo center">
                                  <img src="img/My_Hero_Academia_logo.png" alt="" class="img-responsive">
                               </div>
-                              <div class="portfolio-description">
+                              <div class="portfolio-description center">
+                                 <h3>My Hero Academia</h3>
                                  <p>This div will be for content description. My contribution to this particular portfolio piece will be highlighted.</p>
                               </div>
                            </div>
-                           <div class="col-sm-8">
+                           <div class="col-sm-8 portfolio-item">
                               <div class="col-sm-6 grid-item">
                                  <img src="img/Screen Shot 2016-09-12 at 3.07.36 PM.png" class="img-responsive">
                               </div>
@@ -92,7 +96,29 @@
 
                      <div class="about-gallery-item" data-title="site 2">
                         <div class="about-gallery-item-content">
-                           content 2
+                           <div class="col-sm-4 logo-explanation">
+                              <div class="portfolio-logo">
+                                 <img src="img/funimation-logo.png" alt="" class="img-responsive">
+                              </div>
+                              <div class="portfolio-description">
+                                 <h3>FUNimation Custom Landing Pages</h3>
+                                 <p>This div will be for content description. My contribution to this particular portfolio piece will be highlighted.</p>
+                              </div>
+                           </div>
+                           <div class="col-sm-8 portfolio-item">
+                              <div class="col-sm-6 grid-item">
+                                 <img src="img/Screen Shot 2016-09-19 at 1.04.31 PM.png" class="img-responsive">
+                              </div>
+                              <div class="col-sm-6 grid-item">
+                                 <img src="img/Screen Shot 2016-09-19 at 1.05.07 PM.png" class="img-responsive">
+                              </div>
+                              <div class="col-sm-6 grid-item">
+                                 <img src="img/Screen Shot 2016-09-19 at 1.06.57 PM.png" class="img-responsive">
+                              </div>
+                              <div class="col-sm-6 grid-item">
+                                 <img src="img/Screen Shot 2016-09-19 at 1.05.48 PM.png" class="img-responsive">
+                              </div>
+                           </div>
                         </div>
                      </div>
 
@@ -119,6 +145,26 @@
                   </div>
                </div>
             </div>
+         </div>
+      </section>
+
+      <section id="get-started">
+         <div class="container center">
+            <div class="get-started"><h3>Ready to start your project?</h3><button id="contact">Let's Begin</button></div>
+         </div>
+      </section>
+
+      <section id="contact-form">
+         <h2>Let's get in touch!</h2>
+         <p>If you leave your name, email, and a brief explanation of the project you would like to start, i'll get back to you within 24 hours.</p>
+         <div class="container center">
+            <form>
+               <label for="fname">First Name</label>
+               <input type="text" id="fname" name="firstname">
+
+               <label for="lname">Last Name</label>
+               <input type="text" id="lname" name="lastname">
+            </form>
          </div>
       </section>
 

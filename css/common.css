@@ -1,4 +1,4 @@
-.va-item {
+.va-item, #portfolio .container .about-gallery-item .about-gallery-item-content {
    -webkit-display: flex;
    display: flex;
    align-items: center;
@@ -32,7 +32,8 @@
 }
 
 .red-heading {
-   color: #E74747;
+   color: #CC0000;
+   font-size: 1.8em;
 }
 
 .purple-text a {
@@ -42,6 +43,37 @@
 
 p {
    font-size: 1.2em;
+}
+
+button:focus {
+   -webkit-transition: all 0.30s ease-in-out;
+   -moz-transition: all 0.30s ease-in-out;
+   -ms-transition: all 0.30s ease-in-out;
+   -o-transition: all 0.30s ease-in-out;
+   box-shadow: 0 0 5px #ed0202;
+   padding: 3px 0px 3px 3px;
+   margin: 5px 1px 3px 0px;
+   border: 6px solid #ed0202;
+   outline: 1px solid #ed0202;
+}
+
+input[type=text]:focus, textarea:focus {
+   box-shadow: 0 0 5px #ed0202;
+   padding: 3px 0px 3px 3px;
+   margin: 5px 1px 3px 0px;
+   border: 6px solid #ed0202;
+   outline: 1px solid #ed0202;
+}
+
+input[type=text], textarea {
+   -webkit-transition: all 0.30s ease-in-out;
+   -moz-transition: all 0.30s ease-in-out;
+   -ms-transition: all 0.30s ease-in-out;
+   -o-transition: all 0.30s ease-in-out;
+   outline: none;
+   padding: 3px 0px 3px 3px;
+   margin: 5px 1px 3px 0px;
+   border: 1px solid #ed0202;
 }
 
 #heading {
@@ -130,7 +162,7 @@ p {
 }
 
 #portfolio {
-   height: 100vh;
+   height: 90vh;
    position: relative;
    z-index: 100;
    background-color: white;
@@ -154,11 +186,15 @@ p {
 }
 
 #portfolio .container .about-gallery-item {
+   display: flex;
+   flex-direction: column;
+   align-self: center;
+   justify-content: center;
    height: 100%;
 }
 
 #portfolio .container .about-gallery-item.active {
-   display: block;
+   /*display:block;*/
 }
 
 #portfolio .container .about-gallery-content-container {
@@ -176,7 +212,13 @@ p {
 }
 
 #portfolio .container .about-gallery-content-container .grid-item img {
-   border-radius: 15px;
+   max-height: 195px;
+}
+
+@media screen and (min-width: 1200px) {
+   #portfolio .container .about-gallery-content-container .grid-item img {
+      max-height: 245px;
+   }
 }
 
 #portfolio .container .col-sm-1 .gallery-bar {
@@ -206,7 +248,7 @@ p {
 }
 
 #portfolio .container .col-sm-1 .gallery-bar .gallery-dot.active::after {
-   background-color: #E74747;
+   background-color: #CC0000;
 }
 
 #portfolio .container .col-sm-1 .gallery-bar .gallery-dot:hover::after {
@@ -234,7 +276,7 @@ p {
 #portfolio .container .col-sm-1 .gallery-bar .gallery-dot-overlay {
    width: 100%;
    height: 0;
-   background-color: #E74747;
+   background-color: #CC0000;
    position: absolute;
    top: 0;
 }
@@ -289,4 +331,71 @@ p {
    100% {
       height: 0;
    }
+}
+
+#get-started {
+   height: 10vh;
+   position: relative;
+   z-index: 200;
+   background-color: white;
+}
+
+#get-started .get-started {
+   margin: 0 auto;
+}
+
+#get-started .get-started h3 {
+   float: left;
+   margin: 0;
+   padding-right: 30px;
+   padding-top: 13px;
+}
+
+#get-started .get-started button {
+   float: left;
+   margin: 0 auto;
+   padding: 15px 30px;
+   border: 2px solid black;
+   background-color: white;
+   color: black;
+   display: block;
+   -webkit-transition: ease 500ms;
+}
+
+#get-started .get-started button:hover {
+   background-color: black;
+   color: white;
+   -webkit-transform: scale(1.2);
+   font-weight: bold;
+}
+
+#contact-form {
+   background-color: black;
+   position: relative;
+   z-index: 200;
+   color: white;
+   text-align: center;
+}
+
+#contact-form h2 {
+   margin: 0;
+   padding-top: 40px;
+}
+
+#contact-form p {
+   margin-top: 15px;
+   margin-bottom: 30px;
+}
+
+#contact-form form {
+   width: 400px;
+   margin: 0 auto;
+}
+
+#contact-form form input[type=text] {
+   width: 100%;
+   margin: 15px;
+   border-radius: 5px;
+   border: none;
+   height: 30px;
 }
